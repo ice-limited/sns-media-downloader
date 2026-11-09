@@ -1,8 +1,9 @@
-# ประวัติการเปลี่ยนแปลง
+# Changelog
 
 ## Unreleased
 
-- เตรียม README สำหรับ source repository และอ้างอิงบริบทที่ workspace โดยยังไม่มี implementation หรือ feature plan
-- บันทึกการยืนยันแนวทางเชื่อมบัญชีและเลือก MIT License พร้อมเพิ่ม LICENSE
-- เชื่อม README กลับไปยัง roadmap และ plan stubs สำหรับ init project ใน workspace โดยยังไม่มี implementation
-- บันทึก requirement EN/TH และเชื่อมแผน 019 สำหรับ foundation หลายภาษาที่เพิ่มภาษาได้ โดยยังไม่ implement
+- Prepared the source repository README and linked to the workspace context, with no implementation or feature plan yet.
+- Recorded the confirmed account connection approach and MIT License selection, and added LICENSE.
+- Linked the README to the workspace init project roadmap and plan stubs, with no implementation.
+- Recorded the EN/TH requirement and linked plan 019 for an extensible multilingual foundation, without implementation.
+- Adopted English as the primary language for project-authored documentation in this source repository and translated the README and changelog.

@@ -1,17 +1,21 @@
 # IceLimited SNS Media Downloader
 
-Source repository สำหรับเว็บแอปดาวน์โหลดและประมวลผลสื่อ ทำงานบนเครื่องผู้ใช้คนเดียว รองรับ macOS, Windows และ Linux
+This source repository is for a locally operated web application for downloading and processing media for a single user on macOS, Windows, and Linux.
 
-Repository นี้เป็นส่วน source code ของ workspace `sns-media-downloader-workspace` ซึ่งเก็บ CONTEXT.md, ข้อกำหนด agent, แผนฟีเจอร์ และบันทึกประชุมไว้ที่ระดับ workspace อ่านบริบทหลักก่อนเริ่มงานทุกครั้ง
+It is part of the `sns-media-downloader-workspace`, which maintains CONTEXT.md, agent instructions, feature plans, and meeting records at the workspace root. Read the main context before starting work.
 
-เมื่อ checkout ผ่าน workspace อ่าน [CONTEXT.md](../../CONTEXT.md), [AGENTS.md](../../AGENTS.md) และ [MODEL-ROUTING.md](../../MODEL-ROUTING.md) ที่ workspace root หาก clone repository นี้แยกต่างหาก ให้เปิด workspace repository `git@github.com:ice-limited/sns-media-downloader-workspace.git` เพื่ออ่านเอกสารเหล่านี้
+When checked out through the workspace, read [CONTEXT.md](../../CONTEXT.md), [AGENTS.md](../../AGENTS.md), and [MODEL-ROUTING.md](../../MODEL-ROUTING.md) at its root. If this repository is cloned separately, open the workspace repository `git@github.com:ice-limited/sns-media-downloader-workspace.git` to read those documents.
 
-## สถานะ
+## Status
 
-อยู่ระยะวางแผน init ยังไม่มี implementation หรือผลการทดสอบแอป มี [plan stubs 001–018](../../plans/README.md) และ [roadmap init](../../docs/init-project-roadmap.md) ใน workspace แล้ว ซึ่งยังไม่อนุมัติ implement โครงสร้างที่เสนอคือ `apps/web` สำหรับ Next.js Web+API และ `apps/worker` สำหรับ background jobs ภายใต้ repository เดียว ยังไม่ได้สร้างโฟลเดอร์หรือเลือก dependency จริง
+The project is in init planning; there is no application implementation or test evidence yet. The workspace contains [init plan stubs 001–018](../../plans/README.md) and the [init roadmap](../../docs/init-project-roadmap.md), which are not approved for implementation. The proposed structure has `apps/web` for Next.js Web+API and `apps/worker` for background jobs in one repository; neither directory nor actual dependencies have been created or selected.
 
-**ห้าม commit git ถ้าไม่มีการสั่ง** ก่อน commit ที่ผู้ใช้สั่งทุกครั้ง ต้องอัปเดต CHANGELOG.md ใน workspace และใน source repository ตามส่วนที่เปลี่ยนแปลง
+**Do not create Git commits unless explicitly instructed.** Before each user-instructed commit, update the workspace and source repository CHANGELOG.md files as relevant to the changes.
 
-ข้อกำหนดหลายภาษาเริ่ม UI/app-owned messages ด้วย EN/TH และเพิ่มภาษาได้ในอนาคต ดู [019](../../plans/019-multilingual-en-th.md) และ [architecture ภาษา](../../docs/internationalization.md) โดยทำ foundation ภาษาก่อน UI shell; ยังไม่ได้เลือก library หรือเริ่ม source implementation
+The multilingual requirement starts UI and app-owned messages in EN/TH and allows additional languages later. See [019](../../plans/019-multilingual-en-th.md) and the [language architecture](../../docs/internationalization.md). The language foundation precedes the UI shell; no library has been selected and source implementation has not begun.
 
-เจ้าของเลือก [MIT License](LICENSE) สำหรับโครงการแล้ว License ของแอปไม่ให้สิทธิ์ใน media ที่ดาวน์โหลด; dependency, binary และ font มี license แยกที่ต้องตรวจสอบ
+## Documentation language
+
+English is the primary language for all project-authored documentation in this source repository, including future README, CONTRIBUTING, CHANGELOG, guides, API references, and documentation in other formats. Preserve technical identifiers, commands, original error text, quoted original names, and literal examples; Thai UI text and EN/TH examples need not be translated. Workspace documents remain in Thai under the [workspace policy](../../CONTEXT.md#นโยบายภาษาเอกสาร).
+
+The owner selected the [MIT License](LICENSE) for the project. The app license does not grant rights to downloaded media; dependencies, binaries, and fonts have separate licenses that must be reviewed.
