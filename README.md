@@ -8,7 +8,7 @@ When checked out through the workspace, read [CONTEXT.md](../../CONTEXT.md), [AG
 
 ## Status
 
-The project is in init planning; there is no application implementation or test evidence yet. The workspace contains [init plan stubs 001–018](../../plans/README.md) and the [init roadmap](../../docs/init-project-roadmap.md), which are not approved for implementation. The proposed structure has `apps/web` for Next.js Web+API and `apps/worker` for background jobs in one repository; neither directory nor actual dependencies have been created or selected.
+The project is in init planning; there is no application implementation or test evidence yet. In the workspace, [plan 001](../../plans/001-init-scope-architecture.md) is approved and its documentation is `done` after owner acceptance; the other 18 plans remain unapproved stubs. See the [plan index](../../plans/README.md) and [init roadmap](../../docs/init-project-roadmap.md). Acceptance of 001 does not approve those plans for implementation. The proposed structure has `apps/web` for Next.js Web+API and `apps/worker` for background jobs in one repository; neither directory nor actual dependencies have been created or selected.
 
 **Do not create Git commits unless explicitly instructed.** Before each user-instructed commit, update the workspace and source repository CHANGELOG.md files as relevant to the changes.
 
