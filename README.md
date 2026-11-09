@@ -12,4 +12,4 @@ Repository นี้เป็นส่วน source code ของ workspace `sn
 
 **ห้าม commit git ถ้าไม่มีการสั่ง** ก่อน commit ที่ผู้ใช้สั่งทุกครั้ง ต้องอัปเดต CHANGELOG.md ใน workspace และใน source repository ตามส่วนที่เปลี่ยนแปลง
 
-ยังไม่ได้เลือก license; คำแนะนำเรื่อง license ไม่ถือเป็นการอนุญาตใช้งานโค้ดหรือสื่อที่ดาวน์โหลด
+เจ้าของเลือก [MIT License](LICENSE) สำหรับโครงการแล้ว License ของแอปไม่ให้สิทธิ์ใน media ที่ดาวน์โหลด; dependency, binary และ font มี license แยกที่ต้องตรวจสอบ
