@@ -1,0 +1,82 @@
+# Operating system and editor temporary files
+.DS_Store
+._*
+Thumbs.db
+Desktop.ini
+*.swp
+*.swo
+*~
+
+# Local dependencies, caches, and private environment configuration
+node_modules/
+.npm/
+.cache/
+.eslintcache
+*.tsbuildinfo
+.direnv/
+.env
+.env.*
+!.env.example
+!.env.*.example
+!.env.template
+!.env.*.template
+/.claude/settings.local.json
+
+# Build outputs at monorepo, application, and package boundaries
+.next/
+/dist/
+/build/
+/out/
+/apps/*/dist/
+/apps/*/build/
+/apps/*/out/
+/packages/*/dist/
+/packages/*/build/
+/packages/*/out/
+
+# Generated test reports; retain source instrumentation in coverage/
+/reports/coverage/
+/apps/*/reports/coverage/
+/packages/*/reports/coverage/
+/coverage/coverage-final.json
+/coverage/coverage-summary.json
+/coverage/lcov.info
+/coverage/lcov-report/
+/test-results/
+/playwright-report/
+/blob-report/
+/apps/*/test-results/
+/apps/*/playwright-report/
+/apps/*/blob-report/
+/packages/*/test-results/
+/packages/*/playwright-report/
+/packages/*/blob-report/
+
+# Local application state and downloaded media, never source assets
+/.tmp/
+/tmp/
+/.local/
+/data/
+/downloads/
+/logs/
+/secrets/
+/.secrets/
+/apps/*/.local/
+/apps/*/data/
+/apps/*/downloads/
+/apps/*/logs/
+/apps/*/secrets/
+/apps/*/.secrets/
+
+# Runtime SQLite files; synthetic fixture databases may be versioned
+*.db
+*.sqlite
+*.sqlite3
+*.db-*
+*.sqlite-*
+*.sqlite3-*
+!**/fixtures/**/*.db
+!**/fixtures/**/*.sqlite
+!**/fixtures/**/*.sqlite3
+
+# Keep lockfiles, migrations, shared editor settings, and fixtures trackable

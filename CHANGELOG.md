@@ -2,6 +2,7 @@
 
 ## Unreleased
 
+- Added Git ignore rules for local dependencies, build outputs, runtime data, and developer-specific files.
 - Updated the README to reflect owner acceptance of plan 001's completed documentation and the 18 remaining unapproved plan stubs; there is no application implementation yet.
 - Prepared the source repository README and linked to the workspace context, with no implementation or feature plan yet.
 - Recorded the confirmed account connection approach and MIT License selection, and added LICENSE.
